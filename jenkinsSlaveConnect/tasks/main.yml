@@ -1,0 +1,5 @@
+---
+# tasks file for jenkinsSlaveConnect
+
+- name: Execute script
+  shell: python {{role_path}}/files/app.py -t {{ostype}} -url {{url}} -u {{username}} -p {{password}}
